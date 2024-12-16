@@ -1,0 +1,15 @@
+body{
+    font-family: 'Epilogue';
+    background-color: hsl(0, 0%, 98%);
+
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+

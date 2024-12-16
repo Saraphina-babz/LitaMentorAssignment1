@@ -1,0 +1,132 @@
+.navbar {
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #f8f9fa; 
+}
+
+.navbarList ul {
+    
+    margin-left: 5rem;
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    font-size: 12px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 400;
+    gap: 30px; 
+    border: none;
+    align-items: center;
+}
+.navbarList ul:hover{
+    color: hsl(0, 0%, 1%);
+    cursor: pointer;
+}
+.navbarList {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+    
+}
+
+.navButton {
+    display: flex; 
+    gap: 10px; 
+    font-size: 12px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 400;
+    border-radius: 5px;
+    
+}
+.loginBtn button{
+    border: none;
+    width: 100%;
+    gap: 5rem;
+    border-radius: 5px;
+    color: hsl(0, 0%, 41%);
+}
+    
+.regBtn button{
+   border-radius: 5px;
+   border: 1px solid black;
+   color: hsl(0, 0%, 41%);}
+
+button {
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.loginBtn button:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.regBtn button:hover {
+    color: hsl(0, 0%, 8%);
+}
+.logo h1 {
+    margin: 0; 
+    margin-right: 20px; 
+    font-size: 32px;
+    font-weight: 700;
+}
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.dropdown-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    %);
+    text-align: center;
+    font-size: 12px;z
+    
+}
+
+.dropdown-options {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    z-index: 1;
+    display: none; 
+    
+}
+
+ .dropdown-options,
+.dropdown-options:hover {
+    display: block; 
+    
+    
+} 
+.dropdown-button:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+}
+
+.dropdown-option:hover {
+    background-color: #e0e0e0; 
+}
+
