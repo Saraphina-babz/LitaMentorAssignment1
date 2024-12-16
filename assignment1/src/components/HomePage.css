@@ -58,3 +58,8 @@
     height: fit-content;
 
 }
+.column1 button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 1%);
+    border: 1px solid hsl(0, 0%, 1%);
+}

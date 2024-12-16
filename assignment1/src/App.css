@@ -1,6 +1,7 @@
 body{
     font-family: 'Epilogue';
     background-color: hsl(0, 0%, 98%);
+    cursor: pointer;
 
 } 
 * {
@@ -10,6 +11,6 @@ body{
 }
 html, body {
     height: 100%;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
 }
 
