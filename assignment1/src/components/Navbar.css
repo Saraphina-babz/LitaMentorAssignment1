@@ -1,3 +1,4 @@
+
 .navbar {
     
     display: flex;
@@ -5,11 +6,10 @@
     align-items: center; 
     padding: 10px 20px; 
     background-color: #f8f9fa; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbarList ul {
-    
-    margin-left: 5rem;
     list-style: none; 
     padding: 0; 
     display: flex; 
@@ -27,20 +27,25 @@
 .navbarList {
     display: flex;
     align-items: center;
-    margin-right: 20px; 
+    
+    flex-grow: 1;
     
 }
 
 .navButton {
+
     display: flex; 
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px; 
     font-size: 12px;
     color: hsl(0, 0%, 41%);
     font-weight: 400;
     border-radius: 5px;
+    margin-left: auto;
     
 }
-.loginBtn button{
+.loginBtn{
     border: none;
     width: 100%;
     gap: 5rem;
@@ -48,7 +53,7 @@
     color: hsl(0, 0%, 41%);
 }
     
-.regBtn button{
+.regBtn {
    border-radius: 5px;
    border: 1px solid black;
    color: hsl(0, 0%, 41%);}
@@ -92,9 +97,9 @@ button:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
     cursor: pointer;
-    %);
+    color: hsl(0, 0%, 41%);
     text-align: center;
-    font-size: 12px;z
+    font-size: 12px;
     
 }
 
@@ -106,6 +111,7 @@ button:hover {
     width: 100%; 
     z-index: 1;
     display: none; 
+    padding: 10px 0;
     
 }
 
@@ -120,7 +126,7 @@ button:hover {
 }
 
 .dropdown-option {
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
     display: flex;
     align-items: center; 
@@ -129,4 +135,81 @@ button:hover {
 .dropdown-option:hover {
     background-color: #e0e0e0; 
 }
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative; 
+}
+
+.menuIcon {
+    display: none; 
+    cursor: pointer;
+}
+
+
+
+.loginBtn, .regBtn {
+    margin-left: 10px;
+}
+.mobile-menu{
+    display: none;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position menu */
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: white;
+        width: 100%;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .menu.open {
+        display: flex; 
+    }
+
+    .menuIcon {
+        display: block; 
+        justify-content: flex-end;
+        margin-left: auto;
+
+        
+    }
+
+    .navbar ul{
+        display: none;
+        
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navButton{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
+
 
