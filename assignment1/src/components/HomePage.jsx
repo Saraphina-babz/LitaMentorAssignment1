@@ -4,15 +4,15 @@ import clientDatabiz from '../images/clientDatabiz.svg';
 import clientAudiophile from '../images/clientAudiophile.svg';
 import clientMaker from '../images/clientMaker.svg';
 import clientMeet from '../images/clientMeet.svg';
-import imageHeroDesktop from '../images/imageHeroDesktop.png';
+
 
 const HomePage = () => {
   return (
     <div className='homepage'>
         <div className='column1'>
-            <h1>Make<br/> remote work</h1>
+            <h1>Make remote work</h1>
             <p>
-                Get your team in sync, no matter the location.
+                Get your team in sync, no matter your location.
                 Streamline processes, create team rituals, and watch productivity soar.
             </p>
             <button>Learn more</button>
@@ -29,7 +29,10 @@ const HomePage = () => {
 
 
         <div className='column2'>
-       <img src={imageHeroDesktop}/>
+            <div className='hero'>
+            
+            </div>
+       
         </div>
         
     </div>

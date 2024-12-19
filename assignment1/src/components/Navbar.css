@@ -126,7 +126,7 @@ button:hover {
 }
 
 .dropdown-option {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     display: flex;
     align-items: center; 
